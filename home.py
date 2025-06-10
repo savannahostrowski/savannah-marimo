@@ -26,31 +26,6 @@ def _(mo):
 
 
 @app.cell(hide_code=True)
-def _(mo):
-    import json
-    import os
-
-    VISITOR_FILE = "visitors.json"
-
-    def load_visits():
-        if os.path.exists(VISITOR_FILE):
-            with open(VISITOR_FILE, "r") as f:
-                return json.load(f).get("count", 0)
-        return 0
-
-    def save_visits(count):
-        with open(VISITOR_FILE, "w") as f:
-            json.dump({"count": count}, f)
-
-    current_visits = load_visits() + 1
-    save_visits(current_visits)
-
-    mo.md(f"""This notebook has been visited **{current_visits}** times.""")
-
-    return
-
-
-@app.cell(hide_code=True)
 def _():
     import marimo as mo
     return (mo,)
