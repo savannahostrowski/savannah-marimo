@@ -19,7 +19,7 @@ def _(mo):
     ...and yes, this is a executable Python (Marimo) notebook, running in a WebAssembly container, in your browser. Python is the future!
 
     [^1]: You may also know me as Savannah Ostrowski.
-    [^2]: I've authored and co-authored some PEPs around the JIT - [PEP 774](https://peps.python.org/pep-0744/) and [PEP 774](https://peps.python.org/pep-0774/).
+    [^2]: I've authored and co-authored some PEPs around the JIT - [PEP 744](https://peps.python.org/pep-0744/) and [PEP 774](https://peps.python.org/pep-0774/).
     """
     )
     return
