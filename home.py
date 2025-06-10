@@ -16,7 +16,7 @@ def _(mo):
 
     You can find me many places on the Internet, like [GitHub](https://github.com/savannahostrowski), [Bluesky](https://bsky.app/profile/savannah.dev), and [LinkedIn](https://www.linkedin.com/in/savannahostrowski/). You'll also be able to find me IRL at [EuroPython](https://ep2025.europython.eu/) in July, where I'll be giving my first keynote.
 
-    ..and yes, this is an executable Python (Marimo) notebook, running in a container — in your browser. Python is the future!
+    ...and yes, this is an executable Python (Marimo) notebook, running in a container — in your browser. Python is the future!
 
     [^1]: You may also know me as Savannah Ostrowski.
     [^2]: I've authored and co-authored some PEPs around the JIT - [PEP 744](https://peps.python.org/pep-0744/) and [PEP 774](https://peps.python.org/pep-0774/).
