@@ -26,6 +26,10 @@ jobs:
         run: |
           marimo export html-wasm home.py -o output_dir --mode edit
 
+      - name: Post-processing HTML
+        run: |
+          python postprocessing.py
+
       - name: Copy favicon assets
         run: |
           cp -f favicons/favicon.ico output_dir/favicon.ico
