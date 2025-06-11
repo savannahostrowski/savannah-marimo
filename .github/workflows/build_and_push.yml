@@ -24,17 +24,7 @@ jobs:
           
       - name: Export Marimo notebook to HTML
         run: |
-          marimo export html-wasm home.py -o output_dir --mode edit
-
-      - name: Post-processing HTML
-        run: |
-          python postprocessing.py
-
-      - name: Copy favicon assets
-        run: |
-          cp -f favicons/favicon.ico output_dir/favicon.ico
-          cp -f favicons/favicon-16x16.png output_dir/favicon-16x16.png
-          cp -f favicons/favicon-32x32.png output_dir/favicon-32x32.png
+          marimo export html-wasm playground.py -o output_dir --mode edit
           
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -54,4 +44,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: savannahostrowski/savannah.dev:latest
+          tags: savannahostrowski/marimo-playground:latest
