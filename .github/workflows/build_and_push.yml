@@ -28,9 +28,9 @@ jobs:
 
       - name: Copy favicon assets
         run: |
-          cp -f favicon.ico output_dir/favicon.ico
-          cp -f favicon-16x16.png output_dir/favicon-16x16.png
-          cp -f favicon-32x32.png output_dir/favicon-32x32.png
+          cp -f favicons/favicon.ico output_dir/favicon.ico
+          cp -f favicons/favicon-16x16.png output_dir/favicon-16x16.png
+          cp -f favicons/favicon-32x32.png output_dir/favicon-32x32.png
           
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
