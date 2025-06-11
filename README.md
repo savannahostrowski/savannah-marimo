@@ -1,0 +1,1 @@
+This repo hosts a sample Marimo notebook that I export as WASM-powered HTML (via Pyodide) and deploy as a Docker service that runs on a Raspberry Pi cluster (check out the GitHub Action if you're curious). You can play around with it at [https://playground.savannah.dev/](https://playground.savannah.dev/)
