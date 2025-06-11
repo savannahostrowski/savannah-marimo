@@ -25,6 +25,12 @@ jobs:
       - name: Export Marimo notebook to HTML
         run: |
           marimo export html-wasm home.py -o output_dir --mode edit
+
+      - name: Copy favicon assets
+        run: |
+          cp -f favicon.ico output_dir/favicon.ico
+          cp -f favicon-16x16.png output_dir/favicon-16x16.png
+          cp -f favicon-32x32.png output_dir/favicon-32x32.png
           
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
